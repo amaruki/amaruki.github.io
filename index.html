@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amaruki | Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .badge:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 10px;
+        }
+        
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .skills-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            color: #ffd700;
+            width: 30%;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            background: rgba(0, 0, 0, 0.3);
+            transform: translateX(5px);
+        }
+        
+        .project-title {
+            color: #ffd700;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/58764851?v=4" alt="amaruki Profile Image" class="profile-img">
+            <h1>Hi, I'm amaruki 👋</h1>
+            <p class="tagline">Developer | Creator | Open Source Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/amaruki" class="badge">GitHub</a>
+                <a href="#" class="badge">LinkedIn</a>
+                <a href="#" class="badge">Twitter</a>
+                <a href="#" class="badge">Portfolio</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>About Me 🚀</h2>
+            <p>Hello! I'm amaruki, a passionate developer who loves creating solutions and contributing to open-source projects. With a strong interest in technology and continuous learning, I strive to build innovative applications that make a difference.</p>
+            <p>I enjoy working with various technologies and frameworks, constantly expanding my skill set to stay current with industry trends. My approach combines technical expertise with creative problem-solving.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Skills & Technologies 💻</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="skill-category">Frontend:</td>
+                    <td>HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Backend:</td>
+                    <td>Node.js, Python, Express, Django, REST APIs</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Database:</td>
+                    <td>MySQL, PostgreSQL, MongoDB, Firebase</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Tools:</td>
+                    <td>Git, Docker, AWS, CI/CD, Jest, Webpack</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>GitHub Stats 📊</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=amaruki&show_icons=true&theme=radical" alt="GitHub Stats">
+                </div>
+                <div class="stat-card">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=amaruki&theme=radical" alt="GitHub Streak Stats">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amaruki&layout=compact&theme=radical" alt="Top Languages">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>My Projects 🛠️</h2>
+            <div class="project-card">
+                <div class="project-title">Project One</div>
+                <p>A comprehensive web application built with modern technologies to solve real-world problems. Features include responsive design, API integration, and optimized performance.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Project Two</div>
+                <p>An innovative solution that demonstrates advanced concepts in software development. Built with scalability and user experience in mind.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Project Three</div>
+                <p>An open-source project that showcases collaborative development practices and cutting-edge technologies.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Contact 📬</h2>
+            <div class="contact-item">
+                <strong>Email:</strong> contact@amaruki.dev
+            </div>
+            <div class="contact-item">
+                <strong>Location:</strong> Worldwide (Remote Friendly)
+            </div>
+            <div class="contact-item">
+                <strong>Website:</strong> www.amaruki.dev
+            </div>
+        </div>
+        
+        <footer>
+            <p>Made with ❤️ by amaruki | © 2026 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
